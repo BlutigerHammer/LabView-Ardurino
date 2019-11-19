@@ -9,11 +9,11 @@ void setup() {
 }
 
 void loop() {
-  Serial.print(zmierz_odleglosc());
+  Serial.print(distance());
   Serial.println("cm");
   delay(500);
 }
-int zmierz_odleglosc(){
+int distance(){
   long czas, dystans;
   digitalWrite(trigPin,LOW);
   delayMicroseconds(2);
