@@ -14,13 +14,13 @@ void loop() {
   delay(500);
 }
 int distance(){
-  long czas, dystans;
+  long time, dystans;
   digitalWrite(trigPin,LOW);
   delayMicroseconds(2);
   digitalWrite(trigPin,HIGH);
   delayMicroseconds(10);
   digitalWrite(trigPin,LOW);
-  czas=pulseIn(echoPin,HIGH);
-  dystans=czas/58;
+  time=pulseIn(echoPin,HIGH);
+  dystans=time/58;
   return dystans;
 }
